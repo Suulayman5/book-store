@@ -53,7 +53,7 @@ router.get('/:id', async (req,res)=>{
         
     }
 })
-router.put('/P:id', async (req,res) => {
+router.put('/:id', async (req,res) => {
     try {
         if (!req.body.title || !req.body.author || !req.body.publishYear) {
             return res.status(400).send({

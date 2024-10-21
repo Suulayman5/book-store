@@ -8,6 +8,7 @@ import BookRoute from '/routes/BookRoute.js'
 const app = express()
 app.use(express.json())
 
+app.use(cors())
 app.use('/books', BookRoute)
 
 mongoose.connect(mongoDB)
